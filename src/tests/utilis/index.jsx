@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 export function customRender(jsx) {
@@ -6,6 +6,7 @@ export function customRender(jsx) {
     user: userEvent.setup(),
     screen,
     fireEvent,
+    waitFor,
     ...render(jsx),
   }
 }

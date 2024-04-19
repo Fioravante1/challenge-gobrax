@@ -1,10 +1,12 @@
 import React from "react";
+// import TableMotorista from "./components/tableMotorista/TableMotorista";
+import TableVeiculo from "./components/tableVeiculo/TableVeiculo";
 import BasicTabs from "./components/tabs/Tabs";
 
 function App() {
   return (
     <BasicTabs>
-      <h1>Content</h1>
+      <TableVeiculo />
     </BasicTabs>
   )
 }
