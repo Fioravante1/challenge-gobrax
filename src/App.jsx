@@ -1,9 +1,11 @@
-import './App.css'
+import React from "react";
+import BasicTabs from "./components/tabs/Tabs";
 
 function App() {
-
   return (
-    <div />
+    <BasicTabs>
+      <h1>Content</h1>
+    </BasicTabs>
   )
 }
 
