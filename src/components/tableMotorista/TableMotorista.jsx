@@ -1,8 +1,10 @@
 import { Box, Checkbox, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
-import { useState } from 'react';
+import { useContext } from 'react';
+import Context from '../../context/Context';
+
 
 export default function TableMotorista() {
-  const [checkedId, setChecked] = useState(null);
+  const { setChecked, checkedId } = useContext(Context)
 
   function handleCheckboxChange(id) {
     setChecked(id === checkedId ? null : id);

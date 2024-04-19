@@ -4,7 +4,7 @@ export default function TableVeiculo() {
 
   function createData(id, marca, placa) {
     return { id, marca, placa };
-  }
+  }``
 
   const rows = [
     createData(1, 'Fiat', 'ABC-1234'),
@@ -48,7 +48,7 @@ export default function TableVeiculo() {
                     disablePortal
                     id="combo-box-demo"
                     options={motoristas}
-                    sx={{ width: 200}}
+                    sx={{ width: 200 }}
                     renderInput={(params) => <TextField {...params} label="Motorista" />}
                   />
                 </TableCell>

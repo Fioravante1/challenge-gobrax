@@ -1,11 +1,12 @@
 import { Box, Tab, Tabs, Typography } from '@mui/material';
-import { useState } from 'react';
+import { useContext } from 'react';
+import Context from '../../context/Context';
 
 export default function BasicTabs({ children }) {
-  const [value, setValue] = useState(0);
+  const { tabIndex, setTabIndex } = useContext(Context)
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setTabIndex(newValue);
   };
 
   const a11yProps = (index) => {
@@ -33,7 +34,7 @@ export default function BasicTabs({ children }) {
           alignItems: 'center',
         }}
       >
-        <Tabs value={value} onChange={handleChange} aria-label="tabs">
+        <Tabs value={tabIndex} onChange={handleChange} aria-label="tabs">
           <Tab label="Motorista" {...a11yProps(0)} />
           <Tab label="Veículo" {...a11yProps(1)} />
         </Tabs>
