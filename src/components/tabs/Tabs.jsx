@@ -12,6 +12,7 @@ export default function BasicTabs({ children }) {
     return {
       id: `tabIndex-${index}`,
       'aria-controls': `tabpanel-${index}`,
+      te: 'teste'
     };
   };
 
