@@ -35,7 +35,7 @@ export default function TableMotorista() {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell></TableCell>
+              <TableCell>Teste</TableCell>
               <TableCell>ID</TableCell>
               <TableCell>Nome</TableCell>
               <TableCell>Documento</TableCell>
